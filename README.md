@@ -18,7 +18,7 @@ Este repositório contém o **projeto web** responsável pela **página de divul
 
 ## 🛠️ Tecnologias utilizadas
 
-- **React.js** (ou outra stack que você usou)
+- **React.js**
 - **AWS Amplify** → hospedagem do site
 - **AWS Route 53** → configuração do domínio customizado
-- **Tailwind CSS** (se aplicável para estilização)
+- **Tailwind CSS**
