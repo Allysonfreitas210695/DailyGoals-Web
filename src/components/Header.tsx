@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate(); // ✅ Hook para navegação
 
   return (
     <header className="w-full bg-blue-600 text-white shadow-md">
@@ -32,6 +34,13 @@ const Header = () => {
           >
             Baixar / Testar
           </a>
+          {/* ✅ Botão de Política */}
+          <button
+            onClick={() => navigate("/politica")}
+            className="bg-white text-blue-700 font-medium px-4 py-2 rounded-md shadow hover:bg-blue-200 transition"
+          >
+            Política
+          </button>
         </nav>
 
         <button
@@ -57,6 +66,13 @@ const Header = () => {
           >
             Baixar / Testar
           </a>
+          {/* ✅ Botão de Política no menu mobile */}
+          <button
+            onClick={() => navigate("/politica")}
+            className="block w-full text-center bg-blue-100 text-blue-700 font-medium px-4 py-2 rounded-md shadow hover:bg-blue-200 transition"
+          >
+            Política
+          </button>
         </div>
       )}
     </header>

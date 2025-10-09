@@ -1,19 +1,8 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Benefits from "./components/Benefits";
-import Footer from "./components/Footer";
+import { RouterProvider } from "react-router";
+import { router } from "./routes";
 
 function App() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-100">
-      <Header />
-      <Hero />
-      <Features />
-      <Benefits />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
